@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A website to educate and inspire forest conservation efforts.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300&family=Inspiration&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+  <title>Protect Our Forests</title>
+  <link href="dist/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 text-gray-800 font-sans">
+  
+    <!-- Header -->
+  <header class="fixed bg-transparent z-10 transition-colors duration-300" id="header">
+    <nav class="w-screen mx-auto px-4 py-4 mt-5 flex justify-between items-center transition-all duration-200" id="nav">
+      <h1 class="text-2xl font-bold text-slate-50 ml-5">Protect Our Forests</h1>
+      <ul class="flex space-x-4 w-3/6 text-slate-300 gap-11 font-bold">
+        <li><a href="#home" class="hover:underline hover:text-slate-50">Home</a></li>
+        <li><a href="#importance" class="hover:underline hover:text-slate-50">Why Forests Matter</a></li>
+        <li><a href="#threats" class="hover:underline hover:text-slate-50">Threats</a></li>
+        <li><a href="#action" class="hover:underline hover:text-slate-50">Take Action</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-cover bg-center text-white flex flex-col justify-center items-center w-screen h-screen" 
+    style="background-image: url('./images/forest-hero.jpg');">
+    <div class="absolute bg-black w-full h-full opacity-25"></div>
+    <div class="z-[1]">
+        <h2 class="text-4xl font-bold">Together, We Can Protect Our Forests</h2>
+        <p class="mt-4 text-lg">Forests are the lungs of our planet. Join us in preserving them for future generations.</p>
+    </div>
+  </section>
+
+  <!-- Importance Section -->
+  <section id="importance" class="py-24 px-4 w-screen bg-gray-200">
+    <h2 class="text-3xl font-bold text-green-700 text-center">Why Forests Matter</h2>
+    <div class="flex items-center justify-center mt-20 space-around gap-36">
+        <img src="./images/tree.jpg" alt="" class="w-1/4">
+        <img src="./svgs/point.svg" alt="" class="w-16">
+        <p class="mt-4 text-lg py-7 w-1/4 bg-gray-50">Forests provide oxygen, store carbon, and are home to 80% of terrestrial species. Learn how they sustain life on Earth.</p>
+    </div>
+    <div class="flex items-center justify-center space-around gap-36 bg-700">
+        <p class="mt-4 text-lg py-7 w-1/4 bg-gray-50">Forests provide oxygen, store carbon, and are home to 80% of terrestrial species. Learn how they sustain life on Earth.</p>
+        <img src="./svgs/middle-point.svg" alt="" class="w-16">
+        <img src="./images/tree.jpg" alt="" class="w-1/4">
+    </div>
+    <div class="flex items-center justify-center space-around gap-36">
+        <img src="./images/tree.jpg" alt="" class="w-1/4">
+        <img src="./svgs/middle-point.svg" alt="" class="w-16">
+        <p class="mt-4 text-lg py-7 w-1/4 bg-gray-50">Forests provide oxygen, store carbon, and are home to 80% of terrestrial species. Learn how they sustain life on Earth.</p>
+    </div>
+    <div class="flex items-center justify-center space-around gap-36">
+        <p class="mt-4 text-lg py-7 w-1/4 bg-gray-50">Forests provide oxygen, store carbon, and are home to 80% of terrestrial species. Learn how they sustain life on Earth.</p>
+        <img src="./svgs/middle-point.svg" alt="" class="w-16">
+        <img src="./images/tree.jpg" alt="" class="w-1/4">
+    </div>
+  </section>
+
+  <!-- Threats Section -->
+  <section id="threats" class="py-24 px-4 w-screen h-screen bg-gray-50">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl font-bold text-green-700">Threats to Forests</h2>
+      <p class="mt-4 text-lg">Explore the biggest threats to forests, from deforestation to climate change, and their global impact.</p>
+    </div>
+  </section>
+
+  <!-- Take Action Section -->
+  <section id="action" class="py-24 w-screen h-screen px-4">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl font-bold text-green-700">Take Action</h2>
+      <p class="mt-4 text-lg">Learn how you can reduce your forest footprint and contribute to conservation efforts in your community.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-700 text-white px-5 py-4">
+    <p>&copy; 2025 Protect Our Forests. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
