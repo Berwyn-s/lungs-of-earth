@@ -813,6 +813,50 @@ video {
   background-position: center;
 }
 
+.bg-top {
+  background-position: top;
+}
+
+.bg-\[12px\] {
+  background-position: 12px;
+}
+
+.bg-\[10px\] {
+  background-position: 10px;
+}
+
+.bg-\[120px\] {
+  background-position: 120px;
+}
+
+.bg-\[0\2c 12px\] {
+  background-position: 0,12px;
+}
+
+.bg-\[0_12px\] {
+  background-position: 0 12px;
+}
+
+.bg-\[0_120px\] {
+  background-position: 0 120px;
+}
+
+.bg-\[0_-12px\] {
+  background-position: 0 -12px;
+}
+
+.bg-\[0_-13px\] {
+  background-position: 0 -13px;
+}
+
+.bg-\[0_-130px\] {
+  background-position: 0 -130px;
+}
+
+.bg-\[0_-150px\] {
+  background-position: 0 -150px;
+}
+
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
