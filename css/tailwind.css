@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.arrow-divider::before {
+    background-image: url("https://d3f9k0n15ckvhe.cloudfront.net/wp-content/themes/af-website/dist/images/about-arrow-top.svg");
+    top: -22px;
+    -webkit-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.arrow-divider{
+    position: absolute;
+    top: -46px;
+    bottom: -46px;
+    left: 50%;
+    width: 2px;
+
+    @apply bg-af-green;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
