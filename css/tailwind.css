@@ -26,3 +26,23 @@
     padding-left: 30px;
     padding-right: 30px;
 }
+
+.slide-card-container{
+    @apply w-full
+}
+
+.slide-card{
+    @apply mx-auto max-w-[800px] max-h-[800px] relative flex flex-col bg-teal-800 pb-20 gap-20 rounded-lg;
+}
+
+.slide-card-img{
+    @apply w-full h-[1000px] bg-cover bg-center rounded-t-lg;
+}
+
+.slide-card-title{
+    @apply text-4xl text-gray-100 font-bold text-center pb-2;
+}
+
+.slide-card-description{
+    @apply text-white text-center;
+}

@@ -4,8 +4,8 @@
   "main": "tailwind.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "run:tailwind" : "npx tailwindcss -i ./css/tailwind.css -o ./dist/output.css --watch",
-    "build:tailwind" : "npx tailwindcss -i ./css/tailwind.css -o ./dist/output.css"
+    "run:tailwind": "npx tailwindcss -i ./css/tailwind.css -o ./tailwinddist/output.css --watch",
+    "build:tailwind": "npx tailwindcss -i ./css/tailwind.css -o ./tailwinddist/output.css"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,8 @@
     "url": "https://github.com/Berwyn-s/lungs-of-earth/issues"
   },
   "homepage": "https://github.com/Berwyn-s/lungs-of-earth#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "swiper": "^11.2.1"
+  }
 }
