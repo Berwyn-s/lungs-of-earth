@@ -13,8 +13,12 @@
   <link href="tailwinddist/output.css" rel="stylesheet">
 </head>
 
-<body class="bg-gray-100 text-gray-800 font-sans">
+<body class="bg-gray-100 text-gray-800 font-sans overflow-x-hidden overflow-hidden" id="body">
   
+  <div class="fixed inset-0 z-50 flex items-center justify-center bg-gray-700" id="web-overlay">
+    <div class="animate-spin rounded-full border-4 border-blue-100 border-t-blue-500 h-12 w-12" id="web-spinner"></div>
+  </div>
+
     <!-- Header -->
   <header class="fixed z-10 bg-transparent transition-colors duration-300" id="header">
     <nav class="w-screen mx-auto px-4 py-4 mt-5 flex justify-between items-center transition-all duration-200" id="nav">
@@ -29,7 +33,7 @@
   </header>
 
   <!-- Hero Section -->
-  <section id="home" class="bg-cover bg-center text-white flex flex-col justify-center items-center w-screen h-screen" 
+  <section id="home" class="bg-cover bg-center text-white flex flex-col justify-center items-center w-screen h-screen bg-image"  
     style="background-image: url('./images/forest-hero.jpg');">
     <div class="absolute bg-black w-full h-full opacity-25"></div>
     <div class="z-[1]">
@@ -56,7 +60,7 @@
           <div class="container mt-20 mx-auto text-xl">
             <div class="-mx-gutter flex flex-wrap lg:flex-nowrap items-end relative  gap-10">
               <div class="llg:order-1 w-full lg:w-1/2 order-2 lg:mr-auto relative flex flex-col justify-center lg:h-[458px]">
-                  <div class="mb-7 relative lg:mb-0 pb-17 lg:py-0 px-30px lg:px-0 josh-js duration-250 mx-auto lg:mx-0 max-w-587 lg:max-w-[458px] lg:absolute bottom-0 right-0 top-12 lg:right-9 xl:right-16 ">
+                  <div class="mb-7 relative lg:mb-0 pb-17 lg:py-0 px-30px lg:px-0 josh-js duration-250 mx-auto lg:mx-0 max-w-587 lg:max-w-[458px] lg:absolute bottom-0 right-0 top-12 lg:right-9 xl:right-16">
                       <h2 class="type-preset-2 font-display font-bold text-white mb-4 text-5xl">
                           Oxgen Producer, Carbon Storage
                       </h2>
@@ -67,7 +71,7 @@
               </div>
             
               <div class="mx-auto lg:order-2 lg:ml-auto order-1 relative w-full lg:w-1/2 overflow-hidden lg:h-[458px] max-w-[608px] lg:max-w-full -top-14">
-                <div class="w-full lg:max-w-[608px] lg:min-h-[458px] aspect-w-[72px] aspect-h-[55px] lg:pb-0 bg-center bg-cover bg-no-repeat h-0 lg:h-auto duration-300 transform relative lg:absolute bottom-0 left-0 lg:left-9 xl:left-16" style="background-image:url('https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
+                <div class="w-full lg:max-w-[608px] lg:min-h-[458px] aspect-w-[72px] aspect-h-[55px] lg:pb-0 bg-center bg-cover bg-no-repeat h-0 lg:h-auto duration-300 transform relative lg:absolute bottom-0 left-0 lg:left-9 xl:left-16 bg-image" style="background-image:url('https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
 
                 </div>
               </div>
@@ -75,7 +79,7 @@
 
             <div class="-mx-gutter flex flex-wrap lg:flex-nowrap items-end relative mt-48 gap-10">
               <div class="mx-auto lg:order-1 lg:ml-auto order-1 relative w-full lg:w-1/2 lg:h-[458px] max-w-[608px] lg:max-w-full">
-                <div class="w-full lg:max-w-[608px] lg:min-h-[458px] aspect-w-[72px] aspect-h-[55px] lg:pb-0 bg-cover bg-[0_-150px] bg-no-repeat h-0 lg:h-auto duration-300 transform relative lg:absolute lg:-bottom-14 bottom-0 right-0 lg:right-9 xl:right-16" style="background-image:url('https://images.pexels.com/photos/10041670/pexels-photo-10041670.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
+                <div class="w-full lg:max-w-[608px] lg:min-h-[458px] aspect-w-[72px] aspect-h-[55px] lg:pb-0 bg-cover bg-[0_-150px] bg-no-repeat h-0 lg:h-auto duration-300 transform relative lg:absolute lg:-bottom-14 bottom-0 right-0 lg:right-9 xl:right-16 bg-image" style="background-image:url('https://images.pexels.com/photos/10041670/pexels-photo-10041670.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
                 </div>
               </div>
 
@@ -120,7 +124,7 @@
             </div>
           
             <div class="mx-auto lg:order-2 lg:ml-auto order-1 relative w-full lg:w-1/2 overflow-hidden lg:h-[458px] max-w-[608px] lg:max-w-full -top-14">
-              <div class="w-full lg:max-w-[608px] lg:min-h-[458px] aspect-w-[72px] aspect-h-[55px] lg:pb-0 bg-center bg-cover bg-no-repeat h-0 lg:h-auto duration-300 transform relative lg:absolute bottom-0 left-0 lg:left-9 xl:left-16" style="background-image:url('https://images.pexels.com/photos/1251026/pexels-photo-1251026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
+              <div class="w-full lg:max-w-[608px] lg:min-h-[458px] aspect-w-[72px] aspect-h-[55px] lg:pb-0 bg-center bg-cover bg-no-repeat h-0 lg:h-auto duration-300 transform relative lg:absolute bottom-0 left-0 lg:left-9 xl:left-16 bg-image" style="background-image:url('https://images.pexels.com/photos/1251026/pexels-photo-1251026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
 
               </div>
             </div>
@@ -140,7 +144,7 @@
         <p class="text-lg">Human activities like agriculture, logging, and urban expansion are the leading causes of deforestation. Forests are cleared to make way for farming, livestock grazing, mining, and infrastructure development. This not only destroys habitats but also contributes to climate change by releasing stored carbon dioxide into the atmosphere</p>
       </div>
       <div class="mx-auto lg:order-2 lg:ml-auto order-1 relative w-full lg:w-1/2 overflow-hidden lg:h-[458px] max-w-[608px] lg:max-w-full -top-14">
-        <div class="w-full lg:max-w-[608px] lg:min-h-[458px] aspect-w-[72px] aspect-h-[55px] lg:pb-0 bg-center bg-cover bg-no-repeat h-0 lg:h-auto duration-300 transform relative lg:absolute bottom-0 left-0 lg:left-9 xl:left-16" style="background-image:url('https://images.pexels.com/photos/51951/forest-fire-fire-smoke-conservation-51951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
+        <div class="w-full lg:max-w-[608px] lg:min-h-[458px] aspect-w-[72px] aspect-h-[55px] lg:pb-0 bg-center bg-cover bg-no-repeat h-0 lg:h-auto duration-300 transform relative lg:absolute bottom-0 left-0 lg:left-9 xl:left-16 bg-image" style="background-image:url('https://images.pexels.com/photos/51951/forest-fire-fire-smoke-conservation-51951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
         </div>
       </div>
     </div>
@@ -158,7 +162,7 @@
         <div class="swiper-slide pb-10">
           <div class="slide-card-container">
             <div class="slide-card">
-              <div class="slide-card-img" style="background-image: url('https://images.pexels.com/photos/18943896/pexels-photo-18943896/free-photo-of-a-person-holding-a-small-plant-in-their-hands.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
+              <div class="slide-card-img bg-image" style="background-image: url('https://images.pexels.com/photos/18943896/pexels-photo-18943896/free-photo-of-a-person-holding-a-small-plant-in-their-hands.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
   
               </div>
               <div class="slide-card-text">
@@ -175,7 +179,7 @@
         <div class="swiper-slide">
           <div class="slide-card-container">
             <div class="slide-card">
-              <div class="slide-card-img" style="background-image: url('https://images.pexels.com/photos/3735215/pexels-photo-3735215.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
+              <div class="slide-card-img bg-image" style="background-image: url('https://images.pexels.com/photos/3735215/pexels-photo-3735215.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
   
               </div>
               <div class="slide-card-text">
@@ -194,7 +198,7 @@
         <div class="swiper-slide">
           <div class="slide-card-container">
             <div class="slide-card">
-              <div class="slide-card-img" style="background-image: url('https://images.pexels.com/photos/8543586/pexels-photo-8543586.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
+              <div class="slide-card-img bg-image" style="background-image: url('https://images.pexels.com/photos/8543586/pexels-photo-8543586.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
   
               </div>
               <div class="slide-card-text">
@@ -213,7 +217,7 @@
         <div class="swiper-slide">
           <div class="slide-card-container">
             <div class="slide-card">
-              <div class="slide-card-img" style="background-image: url('https://images.pexels.com/photos/122588/pexels-photo-122588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
+              <div class="slide-card-img bg-image" style="background-image: url('https://images.pexels.com/photos/122588/pexels-photo-122588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
   
               </div>
               <div class="slide-card-text">
@@ -231,7 +235,7 @@
         <div class="swiper-slide">
           <div class="slide-card-container">
             <div class="slide-card">
-              <div class="slide-card-img" style="background-image: url('https://images.pexels.com/photos/14840720/pexels-photo-14840720.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
+              <div class="slide-card-img bg-image" style="background-image: url('https://images.pexels.com/photos/14840720/pexels-photo-14840720.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
   
               </div>
               <div class="slide-card-text">
@@ -249,7 +253,7 @@
         <div class="swiper-slide">
           <div class="slide-card-container">
             <div class="slide-card">
-              <div class="slide-card-img" style="background-image: url('https://images.pexels.com/photos/6346810/pexels-photo-6346810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
+              <div class="slide-card-img bg-image" style="background-image: url('https://images.pexels.com/photos/6346810/pexels-photo-6346810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
   
               </div>
               <div class="slide-card-text">

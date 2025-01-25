@@ -40,9 +40,9 @@
 }
 
 .slide-card-title{
-    @apply text-4xl text-gray-100 font-bold text-center pb-2;
+    @apply text-4xl text-gray-100 font-bold text-center;
 }
 
 .slide-card-description{
-    @apply text-white text-center;
+    @apply text-white text-center px-10 pt-4;
 }

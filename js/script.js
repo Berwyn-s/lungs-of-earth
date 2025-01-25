@@ -46,3 +46,47 @@ window.onscroll = function() {
     myNav.classList.add("mt-5")
   }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const body = document.getElementById('body');
+  const overlay = document.getElementById('web-overlay');
+  
+  // Function to extract background image URL
+  function getBackgroundImageUrl(element) {
+      const backgroundImage = window.getComputedStyle(element).backgroundImage;
+      return backgroundImage.slice(4, -1).replace(/"/g, '');
+  }
+
+  // Find all elements with background images
+  const elementsWithBackgrounds = Array.from(document.querySelectorAll('*'))
+      .filter(el => window.getComputedStyle(el).backgroundImage !== 'none');
+
+  let totalBackgroundImages = elementsWithBackgrounds.length;
+  let loadedBackgroundImages = 0;
+
+  if (totalBackgroundImages === 0) {
+      overlay.style.display = 'none';
+      return;
+  }
+
+  elementsWithBackgrounds.forEach(el => {
+      const img = new Image();
+      img.src = getBackgroundImageUrl(el);
+
+      img.onload = () => {
+          console.log("Image loaded! total imageLoaded: ", loadedBackgroundImages + 1)
+          loadedBackgroundImages++;
+          if (loadedBackgroundImages === totalBackgroundImages) {
+              overlay.style.display = 'none';
+              body.classList.remove('overflow-hidden')
+          }
+      };
+
+      img.onerror = () => {
+          loadedBackgroundImages++;
+          if (loadedBackgroundImages === totalBackgroundImages) {
+              overlay.style.display = 'none';
+          }
+      };
+  });
+});
