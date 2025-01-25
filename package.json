@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Berwyn-s/lungs-of-earth#readme",
   "description": "",
   "dependencies": {
+    "animate.css": "^4.1.1",
     "swiper": "^11.2.1"
   }
 }

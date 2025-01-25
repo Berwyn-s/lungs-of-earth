@@ -2,6 +2,8 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
+import 'animate.css';
+
 const swiper = new Swiper('.swiper', {
   loop: true,
   pagination: {
@@ -15,6 +17,31 @@ const swiper = new Swiper('.swiper', {
   effect: 'cards',
   perSlideOffset: 1,
   rotate: true,
+});
+
+const forestMatterDesc = document.querySelectorAll('.matter-desc');
+const forestMatterImg = document.querySelectorAll('.matter-img');
+  
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log("entry: ", entry)
+    if (entry.isIntersecting) {
+      console.log("entry is intersecting !")
+      entry.target.classList.remove('invisible')
+      entry.target.classList.add('animate__animated');
+      entry.target.classList.add('animate__fadeInUp');
+    }
+  });
+}, {
+  threshold: 0.1 // 10% of element visible
+});
+
+forestMatterDesc.forEach((el) => {
+  observer.observe(el);
+});
+
+forestMatterImg.forEach((el) => {
+  observer.observe(el);
 });
 
 // Smooth Scrolling for Navigation Links
