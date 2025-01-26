@@ -5,6 +5,7 @@ import autoprefixer from 'autoprefixer';
 
 export default defineConfig({
     root: './',
+    base: "./",
     build: {
         outDir: 'build', // Change this to 'build' or your preferred folder name
     },
