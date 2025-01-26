@@ -10,17 +10,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300&family=Inspiration&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
   <title>Protect Our Forests</title>
-  <script type="module" crossorigin src="/assets/index-BjZ9fcC9.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-BAKcqk96.css">
+  <script type="module" crossorigin src="/assets/index-N5tdTpdb.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DFmVew-D.css">
 </head>
 
-<body class="bg-gray-100 text-gray-800 font-sans">
+<body class="bg-gray-100 text-gray-800 font-sans overflow-x-hidden overflow-hidden" id="body">
   
+  <div class="fixed inset-0 z-50 flex items-center justify-center bg-gray-700" id="web-overlay">
+    <div class="animate-spin rounded-full border-4 border-blue-100 border-t-blue-500 h-12 w-12" id="web-spinner"></div>
+  </div>
+
     <!-- Header -->
   <header class="fixed z-10 bg-transparent transition-colors duration-300" id="header">
-    <nav class="w-screen mx-auto px-4 py-4 mt-5 flex justify-between items-center transition-all duration-200" id="nav">
+    <nav class="w-screen mx-auto px-4 py-4 mt-5 flex flex-row justify-center md:justify-between items-center transition-all duration-200" id="nav">
       <h1 class="text-2xl font-bold text-slate-50 ml-5">Protect Our Forests</h1>
-      <ul class="flex space-x-4 w-3/6 text-slate-300 gap-11 font-bold">
+      <ul class="space-x-4 w-3/6 text-slate-300 gap-5 lg:gap-11 font-bold hidden md:flex">
         <li><a href="#home" class="hover:underline hover:text-slate-50">Home</a></li>
         <li><a href="#importance" class="hover:underline hover:text-slate-50">Why Forests Matter</a></li>
         <li><a href="#threats" class="hover:underline hover:text-slate-50">Threats</a></li>
@@ -30,12 +34,12 @@
   </header>
 
   <!-- Hero Section -->
-  <section id="home" class="bg-cover bg-center text-white flex flex-col justify-center items-center w-screen h-screen" 
+  <section id="home" class="bg-cover bg-center text-white flex flex-col justify-center items-center w-screen h-screen bg-image animate__animated animate__fadeIn"  
     style="background-image: url('/assets/forest-hero-Bb4FbVoV.jpg');">
     <div class="absolute bg-black w-full h-full opacity-25"></div>
-    <div class="z-[1]">
-        <h2 class="text-4xl font-bold">Together, We Can Protect Our Forests</h2>
-        <p class="mt-4 text-lg">Forests are the lungs of our planet. Join us in preserving them for future generations.</p>
+    <div class="z-[1] px-10">
+        <h2 class="text-4xl font-bold animate__animated animate__fadeIn delay-1000">Together, We Can Protect Our Forests</h2>
+        <p class="mt-4 text-lg animate__animated animate__fadeIn ">Forests are the lungs of our planet. Join us in preserving them for future generations.</p>
     </div>
   </section>
 
@@ -56,36 +60,42 @@
           
           <div class="container mt-20 mx-auto text-xl">
             <div class="-mx-gutter flex flex-wrap lg:flex-nowrap items-end relative  gap-10">
-              <div class="llg:order-1 w-full lg:w-1/2 order-2 lg:mr-auto relative flex flex-col justify-center lg:h-[458px]">
-                  <div class="mb-7 relative lg:mb-0 pb-17 lg:py-0 px-30px lg:px-0 josh-js duration-250 mx-auto lg:mx-0 max-w-587 lg:max-w-[458px] lg:absolute bottom-0 right-0 top-12 lg:right-9 xl:right-16 ">
-                      <h2 class="type-preset-2 font-display font-bold text-white mb-4 text-5xl">
+              <div class="llg:order-1 w-full lg:w-1/2 order-2 lg:mr-auto relative flex flex-row justify-center lg:h-[458px]">
+                <div class="absolute type-preset-2 font-display font-bold text-black text-8xl top-10 -left-14 opacity-10">
+                  Oxgen Producer, Carbon Storage
+                </div>  
+                <div class="mb-7 relative lg:mb-0 pb-17 lg:py-0 px-30px lg:px-0 josh-js duration-250 mx-auto lg:mx-0 max-w-587 lg:max-w-[458px] lg:absolute bottom-0 right-0 top-12 lg:right-9 xl:right-16">
+                      <h2 class="type-preset-2 font-display font-bold text-white mb-4 text-5xl invisible matter-desc">
                           Oxgen Producer, Carbon Storage
                       </h2>
-                      <div class="font-display text-white text-xl">
+                      <div class="font-display text-white text-xl invisible matter-desc">
                           <p class="pb-20">Forests play a vital role in producing the oxygen we breathe. Through photosynthesis, trees absorb carbon dioxide and release oxygen, making forests the planet’s lungs. Additionally, forests store vast amounts of carbon in their trees and soils, helping mitigate climate change by reducing greenhouse gases in the atmosphere. </p>
                       </div>
                   </div>
               </div>
             
-              <div class="mx-auto lg:order-2 lg:ml-auto order-1 relative w-full lg:w-1/2 overflow-hidden lg:h-[458px] max-w-[608px] lg:max-w-full -top-14">
-                <div class="w-full lg:max-w-[608px] lg:min-h-[458px] aspect-w-[72px] aspect-h-[55px] lg:pb-0 bg-center bg-cover bg-no-repeat h-0 lg:h-auto duration-300 transform relative lg:absolute bottom-0 left-0 lg:left-9 xl:left-16" style="background-image:url('https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
+              <div class="mx-auto lg:order-2 h-[480px] lg:ml-auto order-1 relative w-full lg:w-1/2 overflow-hidden max-w-[608px] lg:max-w-full -top-14 invisible matter-img">
+                <div class="w-full lg:max-w-[608px] h-[480px] lg:min-h-[458px] aspect-w-[72px] aspect-h-[55px] lg:pb-0 bg-center bg-cover bg-no-repeat lg:h-auto duration-300 transform relative lg:absolute bottom-0 left-0 lg:left-9 xl:left-16 bg-image" style="background-image:url('https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
 
                 </div>
               </div>
             </div>    
 
             <div class="-mx-gutter flex flex-wrap lg:flex-nowrap items-end relative mt-48 gap-10">
-              <div class="mx-auto lg:order-1 lg:ml-auto order-1 relative w-full lg:w-1/2 lg:h-[458px] max-w-[608px] lg:max-w-full">
-                <div class="w-full lg:max-w-[608px] lg:min-h-[458px] aspect-w-[72px] aspect-h-[55px] lg:pb-0 bg-cover bg-[0_-150px] bg-no-repeat h-0 lg:h-auto duration-300 transform relative lg:absolute lg:-bottom-14 bottom-0 right-0 lg:right-9 xl:right-16" style="background-image:url('https://images.pexels.com/photos/10041670/pexels-photo-10041670.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
+              <div class="mx-auto lg:order-1 lg:ml-auto h-[480px] order-1 relative w-full lg:w-1/2 lg:h-[458px] max-w-[608px] lg:max-w-full">
+                <div class="w-full lg:max-w-[608px] lg:min-h-[458px] aspect-w-[72px] aspect-h-[55px] lg:pb-0 bg-cover bg-[0_-150px] bg-no-repeat h-[480px] lg:h-auto duration-300 transform relative lg:absolute lg:-bottom-14 bottom-10 right-0 lg:right-9 xl:right-16 bg-image invisible matter-img" style="background-image:url('https://images.pexels.com/photos/10041670/pexels-photo-10041670.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
                 </div>
               </div>
 
-              <div class="w-full lg:w-1/2 order-2 lg:mr-auto relative flex flex-col justify-center lg:h-[458px]">
+              <div class="w-full lg:w-1/2 order-2 lg:mr-auto relative flex flex-col justify-center lg:h-[458px] pb-10 lg:pb-0">
+                <div class="absolute type-preset-2 font-display font-bold text-black text-8xl top-0 right-14 opacity-10">
+                  Home to 80% Terrestial Biodiversity on Earth
+                </div> 
                   <div class="mb-7 lg:mb-0 pt-96px lg:py-0 px-30px lg:px-0 mx-auto lg:mx-0 max-w-587 lg:max-w-[458px] relative lg:absolute top-0 left-0 lg:left-9 xl:left-16 lg:top-14">
-                      <h2 class="type-preset-2 font-display font-bold text-white mb-4 text-5xl">
-                          Home to 80% Terrestial Biodiversity on Earth
+                      <h2 class="type-preset-2 font-display font-bold text-white mb-4 text-5xl invisible matter-desc">
+                        Home to 80% Terrestial Biodiversity on Earth
                       </h2>
-                      <div class="type-preset-5 font-display text-white text-xl">
+                      <div class="type-preset-5 font-display text-white text-xl invisible matter-desc">
                           <p class="p1">Forests are home to 80% of terrestrial species, including plants, animals, and fungi. From towering trees to the tiniest microbes, they provide shelter, food, and breeding grounds. This incredible biodiversity is crucial for maintaining ecological balance and supporting life on Earth.</p>
 
                       </div>
@@ -110,18 +120,21 @@
         <div class="container mx-auto text-xl">
           <div class="-mx-gutter flex flex-wrap lg:flex-nowrap items-end relative  gap-10">
             <div class="llg:order-1 w-full lg:w-1/2 order-2 lg:mr-auto relative flex flex-col justify-center lg:h-[458px]">
+              <div class="absolute type-preset-2 font-display font-bold text-black text-8xl top-0 right-14 opacity-10">
+                Soil Protector
+              </div> 
                 <div class="mb-7 relative lg:mb-0 pb-17 lg:py-0 px-30px lg:px-0 josh-js duration-250 mx-auto lg:mx-0 max-w-587 lg:max-w-[458px] lg:absolute bottom-0 right-0 top-12 lg:right-9 xl:right-16 ">
-                    <h2 class="type-preset-2 font-display font-bold text-green-700 mb-4 text-5xl">
+                    <h2 class="type-preset-2 font-display font-bold text-green-700 mb-4 text-5xl invisible matter-desc">
                         Soil Protector
                     </h2>
-                    <div class="font-display text-green-900 text-xl">
+                    <div class="font-display text-green-900 text-xl invisible matter-desc">
                         <p class="pb-20">Soil is the foundation of life on land, and forests are its natural protector. Without forests, soils would erode quickly, becoming barren and unsuitable for agriculture, wildlife, or water retention. Protecting forests ensures that soil remains healthy and fertile, supporting ecosystems, agriculture, and human livelihoods.</p>
                     </div>
                 </div>
             </div>
           
-            <div class="mx-auto lg:order-2 lg:ml-auto order-1 relative w-full lg:w-1/2 overflow-hidden lg:h-[458px] max-w-[608px] lg:max-w-full -top-14">
-              <div class="w-full lg:max-w-[608px] lg:min-h-[458px] aspect-w-[72px] aspect-h-[55px] lg:pb-0 bg-center bg-cover bg-no-repeat h-0 lg:h-auto duration-300 transform relative lg:absolute bottom-0 left-0 lg:left-9 xl:left-16" style="background-image:url('https://images.pexels.com/photos/1251026/pexels-photo-1251026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
+            <div class="mx-auto lg:order-2 lg:ml-auto order-1 h-[480px] relative w-full lg:w-1/2 overflow-hidden lg:h-[458px] max-w-[608px] lg:max-w-full -top-14">
+              <div class="w-full lg:max-w-[608px] lg:min-h-[458px] aspect-w-[72px] aspect-h-[55px] lg:pb-0 bg-center bg-cover bg-no-repeat h-[480px] lg:h-auto duration-300 transform relative lg:absolute bottom-0 left-0 lg:left-9 xl:left-16 bg-image invisible matter-img" style="background-image:url('https://images.pexels.com/photos/1251026/pexels-photo-1251026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
 
               </div>
             </div>
@@ -132,43 +145,158 @@
   </section>
 
   <!-- Threats Section -->
-  <section id="threats" class="py-24 px-4 w-screen h-[740px] bg-gray-50">
-    <div>
-      <h2 class="mx-auto max-w-7xl text-6xl font-bold text-green-700">Threats to Forests:<br>deforestation</h2>
-    </div>
-    <div class="max-w-7xl mx-auto flex flex-row">
-      <div class="w-full max-w-3xl lg:w-1/2 relative flex flex-col lg:h-[458px] pt-20">
+  <section id="threats" class="py-24 px-4 w-screen lg:h-[740px] bg-gray-50">
+    <div class="max-w-7xl mx-auto flex flex-row flex-wrap">
+      <div class="relative w-full max-w-3xl lg:w-1/2 order-2 lg:order-1 flex flex-col lg:h-[458px] invisible matter-desc">
+        <div>
+          <div class="absolute type-preset-2 font-display font-bold -top-10 -left-10 text-black text-4xl md:text-8xl opacity-5">
+            Threats to Forests:<br>deforestation
+          </div>
+          <h2 class="mx-auto max-w-7xl text-6xl font-bold text-green-700 invisible matter-desc pb-10">Threats to Forests:<br>deforestation</h2>
+        </div>
         <p class="text-lg">Human activities like agriculture, logging, and urban expansion are the leading causes of deforestation. Forests are cleared to make way for farming, livestock grazing, mining, and infrastructure development. This not only destroys habitats but also contributes to climate change by releasing stored carbon dioxide into the atmosphere</p>
       </div>
-      <div class="mx-auto lg:order-2 lg:ml-auto order-1 relative w-full lg:w-1/2 overflow-hidden lg:h-[458px] max-w-[608px] lg:max-w-full -top-14">
-        <div class="w-full lg:max-w-[608px] lg:min-h-[458px] aspect-w-[72px] aspect-h-[55px] lg:pb-0 bg-center bg-cover bg-no-repeat h-0 lg:h-auto duration-300 transform relative lg:absolute bottom-0 left-0 lg:left-9 xl:left-16" style="background-image:url('https://images.pexels.com/photos/51951/forest-fire-fire-smoke-conservation-51951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
+      <div class="mx-auto lg:order-2 lg:ml-auto order-1 relative w-full h-[480px] lg:w-1/2 overflow-hidden lg:h-[458px] max-w-[608px] lg:max-w-full -top-14 invisible matter-img">
+        <div class="w-full lg:max-w-[608px] lg:min-h-[458px] aspect-w-[72px] aspect-h-[55px] lg:pb-0 bg-center bg-cover bg-no-repeat h-[480px]  lg:h-auto duration-300 transform relative lg:absolute bottom-0 left-0 lg:left-9 xl:left-16 bg-image" style="background-image:url('https://images.pexels.com/photos/51951/forest-fire-fire-smoke-conservation-51951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
         </div>
       </div>
     </div>
   </section>
 
   <!-- Take Action Section -->
-  <section id="action" class="py-24 w-screen h-screen px-4">
+  <section id="action" class="py-24 w-screen px-4">
+    <div class="absolute type-preset-2 font-display font-bold text-black text-8xl opacity-5">
+      Take Action
+    </div>
     <div class="max-w-7xl mx-auto">
       <h2 class="text-8xl font-bold text-green-700">Take Action</h2>
-      <p class="mt-4 text-lg">Learn how you can reduce your forest footprint and contribute to conservation efforts in your community.</p>
+      <p class="mt-4 text-lg">Learn how your action can help protect our forests</p>
     </div>
 
-    <div class="swiper-container">
+    <div class="swiper mt-20">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide pb-10">
+          <div class="slide-card-container">
+            <div class="slide-card">
+              <div class="slide-card-img bg-image" style="background-image: url('https://images.pexels.com/photos/18943896/pexels-photo-18943896/free-photo-of-a-person-holding-a-small-plant-in-their-hands.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
+  
+              </div>
+              <div class="slide-card-text">
+                <h1 class="slide-card-title">
+                  Forest replanting
+                </h1>
+                <p class="slide-card-description">
+                  Help restore forests by planting trees in your community or supporting reforestation projects.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-card-container">
+            <div class="slide-card">
+              <div class="slide-card-img bg-image" style="background-image: url('https://images.pexels.com/photos/3735215/pexels-photo-3735215.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
+  
+              </div>
+              <div class="slide-card-text">
+                <h1 class="slide-card-title">
+                  Recycle, Reduse, and Reuse
+                </h1>
+                <p class="slide-card-description">
+                  Reduce your paper and wood consumption by recycling and reusing materials whenever possible.
+
+                </p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-card-container">
+            <div class="slide-card">
+              <div class="slide-card-img bg-image" style="background-image: url('https://images.pexels.com/photos/8543586/pexels-photo-8543586.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
+  
+              </div>
+              <div class="slide-card-text">
+                <h1 class="slide-card-title">
+                  Educate, and spread awareness
+                </h1>
+                <p class="slide-card-description">
+                  Educate people about the importance of forests for climate regulation, biodiversity, and preventing natural disasters.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="swiper-slide">
+          <div class="slide-card-container">
+            <div class="slide-card">
+              <div class="slide-card-img bg-image" style="background-image: url('https://images.pexels.com/photos/122588/pexels-photo-122588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
+  
+              </div>
+              <div class="slide-card-text">
+                <h1 class="slide-card-title">
+                  Reduce Paper and Wood Usage
+                </h1>
+                <p class="slide-card-description">
+                  Use recycled paper, switch to digital alternatives, and purchase products certified by sustainable forestry initiatives (e.g., FSC-certified products)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="slide-card-container">
+            <div class="slide-card">
+              <div class="slide-card-img bg-image" style="background-image: url('https://images.pexels.com/photos/14840720/pexels-photo-14840720.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
+  
+              </div>
+              <div class="slide-card-text">
+                <h1 class="slide-card-title">
+                  Prevent Forest Fire
+                </h1>
+                <p class="slide-card-description">
+                  Practice fire safety in forested areas, enforce strict regulations for fire-prone zones, and develop quick-response firefighting systems.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="slide-card-container">
+            <div class="slide-card">
+              <div class="slide-card-img bg-image" style="background-image: url('https://images.pexels.com/photos/6346810/pexels-photo-6346810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
+  
+              </div>
+              <div class="slide-card-text">
+                <h1 class="slide-card-title">
+                  Engange with Local Communities
+                </h1>
+                <p class="slide-card-description">
+                  Collaborate with local communities to create sustainable ways to manage and benefit from forests without exploiting them.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+      <!-- If we need pagination -->
       <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
     </div>
     
   </section>
 
   <!-- Footer -->
-  <footer class="bg-green-700 text-white px-5 py-4">
+  <footer class="bg-teal-900 text-white px-5 py-4">
     <p>&copy; 2025 Protect Our Forests. All rights reserved.</p>
   </footer>
 
