@@ -21,9 +21,9 @@
 
     <!-- Header -->
   <header class="fixed z-10 bg-transparent transition-colors duration-300" id="header">
-    <nav class="w-screen mx-auto px-4 py-4 mt-5 flex justify-between items-center transition-all duration-200" id="nav">
+    <nav class="w-screen mx-auto px-4 py-4 mt-5 flex flex-row justify-center md:justify-between items-center transition-all duration-200" id="nav">
       <h1 class="text-2xl font-bold text-slate-50 ml-5">Protect Our Forests</h1>
-      <ul class="flex space-x-4 w-3/6 text-slate-300 gap-11 font-bold">
+      <ul class="space-x-4 w-3/6 text-slate-300 gap-5 lg:gap-11 font-bold hidden md:flex">
         <li><a href="#home" class="hover:underline hover:text-slate-50">Home</a></li>
         <li><a href="#importance" class="hover:underline hover:text-slate-50">Why Forests Matter</a></li>
         <li><a href="#threats" class="hover:underline hover:text-slate-50">Threats</a></li>
@@ -36,9 +36,9 @@
   <section id="home" class="bg-cover bg-center text-white flex flex-col justify-center items-center w-screen h-screen bg-image animate__animated animate__fadeIn"  
     style="background-image: url('./images/forest-hero.jpg');">
     <div class="absolute bg-black w-full h-full opacity-25"></div>
-    <div class="z-[1]">
+    <div class="z-[1] px-10">
         <h2 class="text-4xl font-bold animate__animated animate__fadeIn delay-1000">Together, We Can Protect Our Forests</h2>
-        <p class="mt-4 text-lg animate__animated animate__fadeIn">Forests are the lungs of our planet. Join us in preserving them for future generations.</p>
+        <p class="mt-4 text-lg animate__animated animate__fadeIn ">Forests are the lungs of our planet. Join us in preserving them for future generations.</p>
     </div>
   </section>
 
@@ -59,7 +59,7 @@
           
           <div class="container mt-20 mx-auto text-xl">
             <div class="-mx-gutter flex flex-wrap lg:flex-nowrap items-end relative  gap-10">
-              <div class="llg:order-1 w-full lg:w-1/2 order-2 lg:mr-auto relative flex flex-col justify-center lg:h-[458px]">
+              <div class="llg:order-1 w-full lg:w-1/2 order-2 lg:mr-auto relative flex flex-row justify-center lg:h-[458px]">
                 <div class="absolute type-preset-2 font-display font-bold text-black text-8xl top-10 -left-14 opacity-10">
                   Oxgen Producer, Carbon Storage
                 </div>  
@@ -73,20 +73,20 @@
                   </div>
               </div>
             
-              <div class="mx-auto lg:order-2 lg:ml-auto order-1 relative w-full lg:w-1/2 overflow-hidden lg:h-[458px] max-w-[608px] lg:max-w-full -top-14 invisible matter-img">
-                <div class="w-full lg:max-w-[608px] lg:min-h-[458px] aspect-w-[72px] aspect-h-[55px] lg:pb-0 bg-center bg-cover bg-no-repeat h-0 lg:h-auto duration-300 transform relative lg:absolute bottom-0 left-0 lg:left-9 xl:left-16 bg-image" style="background-image:url('https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
+              <div class="mx-auto lg:order-2 h-[480px] lg:ml-auto order-1 relative w-full lg:w-1/2 overflow-hidden max-w-[608px] lg:max-w-full -top-14 invisible matter-img">
+                <div class="w-full lg:max-w-[608px] h-[480px] lg:min-h-[458px] aspect-w-[72px] aspect-h-[55px] lg:pb-0 bg-center bg-cover bg-no-repeat lg:h-auto duration-300 transform relative lg:absolute bottom-0 left-0 lg:left-9 xl:left-16 bg-image" style="background-image:url('https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
 
                 </div>
               </div>
             </div>    
 
             <div class="-mx-gutter flex flex-wrap lg:flex-nowrap items-end relative mt-48 gap-10">
-              <div class="mx-auto lg:order-1 lg:ml-auto order-1 relative w-full lg:w-1/2 lg:h-[458px] max-w-[608px] lg:max-w-full">
-                <div class="w-full lg:max-w-[608px] lg:min-h-[458px] aspect-w-[72px] aspect-h-[55px] lg:pb-0 bg-cover bg-[0_-150px] bg-no-repeat h-0 lg:h-auto duration-300 transform relative lg:absolute lg:-bottom-14 bottom-0 right-0 lg:right-9 xl:right-16 bg-image invisible matter-img" style="background-image:url('https://images.pexels.com/photos/10041670/pexels-photo-10041670.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
+              <div class="mx-auto lg:order-1 lg:ml-auto h-[480px] order-1 relative w-full lg:w-1/2 lg:h-[458px] max-w-[608px] lg:max-w-full">
+                <div class="w-full lg:max-w-[608px] lg:min-h-[458px] aspect-w-[72px] aspect-h-[55px] lg:pb-0 bg-cover bg-[0_-150px] bg-no-repeat h-[480px] lg:h-auto duration-300 transform relative lg:absolute lg:-bottom-14 bottom-10 right-0 lg:right-9 xl:right-16 bg-image invisible matter-img" style="background-image:url('https://images.pexels.com/photos/10041670/pexels-photo-10041670.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
                 </div>
               </div>
 
-              <div class="w-full lg:w-1/2 order-2 lg:mr-auto relative flex flex-col justify-center lg:h-[458px]">
+              <div class="w-full lg:w-1/2 order-2 lg:mr-auto relative flex flex-col justify-center lg:h-[458px] pb-10 lg:pb-0">
                 <div class="absolute type-preset-2 font-display font-bold text-black text-8xl top-0 right-14 opacity-10">
                   Home to 80% Terrestial Biodiversity on Earth
                 </div> 
@@ -132,8 +132,8 @@
                 </div>
             </div>
           
-            <div class="mx-auto lg:order-2 lg:ml-auto order-1 relative w-full lg:w-1/2 overflow-hidden lg:h-[458px] max-w-[608px] lg:max-w-full -top-14">
-              <div class="w-full lg:max-w-[608px] lg:min-h-[458px] aspect-w-[72px] aspect-h-[55px] lg:pb-0 bg-center bg-cover bg-no-repeat h-0 lg:h-auto duration-300 transform relative lg:absolute bottom-0 left-0 lg:left-9 xl:left-16 bg-image invisible matter-img" style="background-image:url('https://images.pexels.com/photos/1251026/pexels-photo-1251026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
+            <div class="mx-auto lg:order-2 lg:ml-auto order-1 h-[480px] relative w-full lg:w-1/2 overflow-hidden lg:h-[458px] max-w-[608px] lg:max-w-full -top-14">
+              <div class="w-full lg:max-w-[608px] lg:min-h-[458px] aspect-w-[72px] aspect-h-[55px] lg:pb-0 bg-center bg-cover bg-no-repeat h-[480px] lg:h-auto duration-300 transform relative lg:absolute bottom-0 left-0 lg:left-9 xl:left-16 bg-image invisible matter-img" style="background-image:url('https://images.pexels.com/photos/1251026/pexels-photo-1251026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
 
               </div>
             </div>
@@ -144,19 +144,19 @@
   </section>
 
   <!-- Threats Section -->
-  <section id="threats" class="py-24 px-4 w-screen h-[740px] bg-gray-50">
-    <div class="absolute type-preset-2 font-display font-bold text-black text-8xl opacity-5">
-      Threats to Forests:<br>deforestation
-    </div> 
-    <div>
-      <h2 class="mx-auto max-w-7xl text-6xl font-bold text-green-700 invisible matter-desc">Threats to Forests:<br>deforestation</h2>
-    </div>
-    <div class="max-w-7xl mx-auto flex flex-row">
-      <div class="w-full max-w-3xl lg:w-1/2 relative flex flex-col lg:h-[458px] pt-20 invisible matter-desc">
+  <section id="threats" class="py-24 px-4 w-screen lg:h-[740px] bg-gray-50">
+    <div class="max-w-7xl mx-auto flex flex-row flex-wrap">
+      <div class="relative w-full max-w-3xl lg:w-1/2 order-2 lg:order-1 flex flex-col lg:h-[458px] invisible matter-desc">
+        <div>
+          <div class="absolute type-preset-2 font-display font-bold -top-10 -left-10 text-black text-4xl md:text-8xl opacity-5">
+            Threats to Forests:<br>deforestation
+          </div>
+          <h2 class="mx-auto max-w-7xl text-6xl font-bold text-green-700 invisible matter-desc pb-10">Threats to Forests:<br>deforestation</h2>
+        </div>
         <p class="text-lg">Human activities like agriculture, logging, and urban expansion are the leading causes of deforestation. Forests are cleared to make way for farming, livestock grazing, mining, and infrastructure development. This not only destroys habitats but also contributes to climate change by releasing stored carbon dioxide into the atmosphere</p>
       </div>
-      <div class="mx-auto lg:order-2 lg:ml-auto order-1 relative w-full lg:w-1/2 overflow-hidden lg:h-[458px] max-w-[608px] lg:max-w-full -top-14 invisible matter-img">
-        <div class="w-full lg:max-w-[608px] lg:min-h-[458px] aspect-w-[72px] aspect-h-[55px] lg:pb-0 bg-center bg-cover bg-no-repeat h-0 lg:h-auto duration-300 transform relative lg:absolute bottom-0 left-0 lg:left-9 xl:left-16 bg-image" style="background-image:url('https://images.pexels.com/photos/51951/forest-fire-fire-smoke-conservation-51951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
+      <div class="mx-auto lg:order-2 lg:ml-auto order-1 relative w-full h-[480px] lg:w-1/2 overflow-hidden lg:h-[458px] max-w-[608px] lg:max-w-full -top-14 invisible matter-img">
+        <div class="w-full lg:max-w-[608px] lg:min-h-[458px] aspect-w-[72px] aspect-h-[55px] lg:pb-0 bg-center bg-cover bg-no-repeat h-[480px]  lg:h-auto duration-300 transform relative lg:absolute bottom-0 left-0 lg:left-9 xl:left-16 bg-image" style="background-image:url('https://images.pexels.com/photos/51951/forest-fire-fire-smoke-conservation-51951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
         </div>
       </div>
     </div>
